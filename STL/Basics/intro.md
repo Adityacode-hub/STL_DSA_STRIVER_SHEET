@@ -34,5 +34,5 @@ a template is a siple and powerful tool in c ++
   
 
   # another method of writing
-  template <typename T> 
+template<typename T> 
 void Array<T>::append(T data)
