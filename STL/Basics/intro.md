@@ -27,3 +27,8 @@ a template is a siple and powerful tool in c ++
   # Template
   1>function template or Generic function
   2>function definition
+
+
+  ## multiple type checking
+  template<typename x,typename y>
+  
