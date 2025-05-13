@@ -32,3 +32,7 @@ a template is a siple and powerful tool in c ++
   ## multiple type checking
   template<typename x,typename y>
   
+
+  # another method of writing
+  template <typename T> 
+void Array<T>::append(T data)
