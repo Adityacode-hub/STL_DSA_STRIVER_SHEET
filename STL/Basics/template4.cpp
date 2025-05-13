@@ -3,6 +3,7 @@ using namespace std;
 template<typename X>
 void sort(X arr[],int size)
 {
+    int lastindex=size-1;
     for(int i=0;i<size-1;i++)
      {
         for(int j=i+1;j<size;j++)
@@ -18,7 +19,11 @@ void sort(X arr[],int size)
      for(int i=0;i<size;i++)
       {
         cout<<arr[i];
+
       }
+    cout<<endl;
+      cout<<"greatest stored among sorted one"<<arr[lastindex];
+
 }
  int main()
  {
