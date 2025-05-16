@@ -8,7 +8,7 @@ explicit iterator
 --------------------        four different classes
                                      -------------------
 1. begin() end(last element ke ek baadh ka elemnt ) -          iterator
-2. cbegin() c end() -     const_iterator
+2. cbegin() cend() -     const_iterator
 3. rbegin() rend() -      reverse_iterator
 4. crbegin() crend()-     const_reverse_iterator
 5. front()
