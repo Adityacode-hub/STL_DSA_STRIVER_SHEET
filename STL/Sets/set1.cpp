@@ -56,9 +56,21 @@ for (auto x:s5)
 }
 cout<<endl;
 }
+//  void f3()
+//  {
+//     unordered_multiset<int>s6={20,30,40,50};
+//     for(auto x:s6)
+//     {
+//         cout<<x<< " ";
+
+//     }
+//     cout<<endl;
+
+
+//  }
 
 int main()
 {
-    f2();
+//    f3();
     return 0;
-}
+} 
