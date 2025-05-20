@@ -41,3 +41,8 @@ int main() {
     
     return 0;
 }
+
+//lambda [](){}
+
+// [ cc ] (parameter) {function definition}
+
