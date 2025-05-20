@@ -112,7 +112,7 @@ void example11() //find()
 {
     vector<int>v1={21,4,4,6,7,7,121,53,110,4,19,20};
     vector<int>::iterator it;
-    it=find(v1.begin(),v1.end(),110);
+    it=find(v1.begin(),v1.end(),110);//first, last and value
     if(it==v1.end())
         cout<<"Element not found";
     else
@@ -190,11 +190,11 @@ void example19() //is_sorted()
     else
         cout<<"No it is not sorted";
 }
-void example20() //is_sorted_until()
+void example20() //is_sorted_until()        //It checks your list from the beginning and stops when it finds the first number that breaks the increasing order.
 {
     vector<int>v1={11,44,56,77,33,99,66,55,88};
     vector<int>::iterator it;
-    it=is_sorted_until(v1.begin(),v1.end());
+    it=is_sorted_until(v1.begin(),v1.end());//it will return when the sorting will broke
     cout<<*it<<endl;
     cout<<"Number of elements sorted until the first unsorted one is "<<it-v1.begin();
 }
