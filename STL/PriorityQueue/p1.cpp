@@ -67,8 +67,8 @@ void f3()
 {
     priority_queue<employee,vector<employee>,comparesalary>pq1;//here the top elemnt ca only be seen after the comparision so we need to define the class comparision and pass the value
     pq1.push(*new employee(1,"aditya",10000));
-    pq1.push(*new employee(1,"aman",1000));
-    pq1.push(*new employee(1,"babd",2000));
+    pq1.push(*new employee(2,"aman",1000));
+    pq1.push(*new employee(3,"babd",2000));
   cout<<pq1.top();
    cout<<endl;
     
