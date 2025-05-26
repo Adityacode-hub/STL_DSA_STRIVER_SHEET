@@ -190,7 +190,7 @@ void example19() //is_sorted()
     else
         cout<<"No it is not sorted";
 }
-void example20() //is_sorted_until()        //It checks your list from the beginning and stops when it finds the first number that breaks the increasing order.
+void example20() //is_sorted_until()   //It checks your list from the beginning and stops when it finds the first number that breaks the increasing order.
 {
     vector<int>v1={11,44,56,77,33,99,66,55,88};
     vector<int>::iterator it;
@@ -198,7 +198,7 @@ void example20() //is_sorted_until()        //It checks your list from the begin
     cout<<*it<<endl;
     cout<<"Number of elements sorted until the first unsorted one is "<<it-v1.begin();
 }
-void example21() //sort()
+void example21() //sort():-it will sort in ascending or descending order.
 {
     vector<int>v1={11,44,22,77,33,99,66,55,88};
     sort(v1.begin(),v1.end());
