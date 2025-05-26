@@ -15,7 +15,7 @@ void example1() //adjacent_find()
     if(it==v2.end())
         cout<<"\nNo such pair found";
 }
-void example2() //all_of()` // all the range ar in satidfying condition or not
+void example2() //all_of()` // all the range ar in satisfying condition or not
 {
     vector<int> v1={10,20,14,50,18,70,12};
     if(all_of(v1.begin(),v1.end(),[](int a)->bool {return a%2==0;}))
@@ -23,7 +23,7 @@ void example2() //all_of()` // all the range ar in satidfying condition or not
     else
         cout<<"\nAll numbers are not even";
 }
-void example3() //any_of()
+void example3() //any_of():-returns a boolean value 1 if any of the elements in a data range match a condition and 0 if none of the elements matched the condition
 {
     vector<int> v1={10,20,14,50,18,7,12};
     if(any_of(v1.begin(),v1.end(),[](int a)->bool {return a%2==1;}))
@@ -83,7 +83,7 @@ void example8() //generate()
         cout<<num<<" ";
     cout<<endl;
 }
-void example9() //generate_n()
+void example9() //generate_n():-used to assign values to a specified range of elements by repeatedly calling a provided function object
 {
     vector <int> v1(10);
     generate_n(v1.begin(),5,[]()->int { 
@@ -118,7 +118,7 @@ void example11() //find()
     else
         cout<<"Element found at index "<<it-v1.begin();
 }
-void example12() //find_if()
+void example12() //find_if():- find the specified value in the find the value
 {
     vector<int>v1={21,41,40,6,7,7,121,53,110,4,19,20};
     vector<int>::iterator it;
@@ -141,7 +141,7 @@ void example13() //equal()
     else
         cout<<"not equal";
 }
-void example14() //fill()
+void example14() //fill():- algorithm modifies the original sequence in-place, replacing the existing values with the provided value
 {
     vector<int>v1 = {10,10,20,30,30,40,40,40,50,60,60,70,70,70,80};
     fill(v1.begin()+1,v1.begin()+5,100);
@@ -208,7 +208,7 @@ void example21() //sort()
 int main()
 {
 
-    example21();
+    example14();
     cout<<endl;
     return 0;
 }
