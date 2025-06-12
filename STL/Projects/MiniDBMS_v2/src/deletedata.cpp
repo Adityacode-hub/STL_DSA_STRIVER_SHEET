@@ -12,9 +12,11 @@ DeleteRecord::DeleteRecord(int id, string name) : Database(id, name)
     }
 }
 
-void DeleteRecord::save(string data) {
+void DeleteRecord::save(string data)
+{
     cout << "Logging delete: " << data << endl;
 }
+
 
 void DeleteRecord::deleterecord(int id, string name) 
 {
@@ -28,7 +30,7 @@ void DeleteRecord::deleterecord(int id, string name)
     }
     cout << "Record not found.\n";
 }
-void DeleteRecord::dumpToFile(string filename) 
+void DeleteRecord::dumpToFile(string filename) //writing in the file system
 {
     ofstream out(filename);
     if (!out) {
@@ -67,9 +69,11 @@ void DeleteRecord::insertdata(int id, string name)
 }
 
 
-void DeleteRecord::showallRecord() {
+void DeleteRecord::showallRecord() 
+{
     cout << "All Records:" << endl;
-    for (auto& record : records) {
+    for (auto& record : records) 
+    {
         cout << "ID: " << record.first << ", Name: " << record.second << endl;
     }
 }

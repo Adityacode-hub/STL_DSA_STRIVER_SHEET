@@ -1,11 +1,9 @@
 #ifndef DELETERECORD_HPP
 #define DELETERECORD_HPP
-
 #include "Database.hpp"
 #include <vector>
 #include <string>
 using namespace std;
-
 class DeleteRecord : public Database {
 private:
     vector<pair<int, string>> records;
