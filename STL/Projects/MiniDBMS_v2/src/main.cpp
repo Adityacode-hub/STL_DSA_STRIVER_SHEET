@@ -13,8 +13,11 @@ int main()
     db.query("SELECT TABLE students");
     db.query("UPDATE TABLE students 1 Johnny");
     db.query("SELECT TABLE students");
-    db.query("DELETE TABLE students 2");
+    // db.query("DELETE TABLE students 2");
     db.query("SELECT TABLE students");
+    db.loadtable("students", "data.txt");
+    db.dumptable("students", "data.txt");
+
     return 0;
 
 }
