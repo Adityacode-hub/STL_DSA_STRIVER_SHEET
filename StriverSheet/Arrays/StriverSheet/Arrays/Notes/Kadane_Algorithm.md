@@ -17,6 +17,21 @@ Dynamic Programming / Sliding Window approach to find the max sum contiguous sub
       - Update `max_so_far = max(max_so_far, max_ending_here)`.
       3. Return `max_so_far`.
 
+
+      Go from left to right.
+
+At each element, you ask:
+
+“Should I continue with the current subarray, or start fresh from here?”
+
+We use two variables:
+
+currentSum: the current running sum
+
+maxSum: the maximum sum found so far
+
+
+
       ## Code (C++)
 
       ```cpp
@@ -28,4 +43,19 @@ Dynamic Programming / Sliding Window approach to find the max sum contiguous sub
                                   }
                                       return max_so_far;
                                       }
-                                      
+----------------------          
+ # ANOTHER APPROACH
+ ---------------------
+
+
+                         ```cpp
+                          int currentSum = nums[0];  // Start from first element
+        int maxSum = nums[0];
+
+        for (int i = 1; i < nums.size(); i++) {
+            currentSum = max(nums[i], currentSum + nums[i]);  // Continue or start fresh
+            maxSum = max(maxSum, currentSum);  // Update max if needed
+        }
+
+        return maxSum;
+    }
