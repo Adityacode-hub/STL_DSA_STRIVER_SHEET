@@ -44,7 +44,7 @@ set:-bidirectional iterator.
 
  example-
  -----------
-
+ // functor is simply overloading with the operator()
  class fun
  {
     public :
@@ -59,3 +59,11 @@ set:-bidirectional iterator.
     int a=f(5,7);//it looks like a function but it is calling the call operator
  }
 
+//simple example of the functor as comparator
+struct CustomCompare {
+    bool operator()(int a, int b) {
+        return a > b;  // descending
+    }
+};
+
+sort(v.begin(), v.end(), CustomCompare());  // functor comparator

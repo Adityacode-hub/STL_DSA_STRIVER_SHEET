@@ -46,3 +46,18 @@ int main() {
 
 // [ cc ] (parameter) {function definition}
 
+//[capture](parameter_list) -> return_type {
+    // body
+//}
+
+
+//parameter_list contains the input that the lambda function needs
+
+// int multiplier=2;
+// auto multiply=[=](int x)
+//{
+//    return x*multiplier;
+
+//auto must be used to store the lambda function
+
+//}

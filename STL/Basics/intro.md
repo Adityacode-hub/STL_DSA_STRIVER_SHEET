@@ -14,7 +14,7 @@ permits writitng common functions or types that differ only in the set of the ty
 
 # Template
 
-a template is a siple and powerful tool in c ++
+a template is a simple and powerful tool in c ++
  The simple idea is to pass data type as parameter so that we dont need to write the same code for the different data types
 
 #  keywords to support templates:-

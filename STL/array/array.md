@@ -15,11 +15,11 @@ explicit iterator
 6. back()
 7. empty()
 8. size()
-9.data() -> returns the address of the first element
+9.data()        -> returns the address of the first element
 
-*(it+i) ->random access iterator
-it-- ->bidirectional iterator
-it++ ->forward iterator
+*(it+i)   ->random access iterator
+it--      ->bidirectional iterator
+it++      ->forward iterator
 
-it++ ->forward
-it+1->bidirectional
+it++       ->forward
+it+1       ->bidirectional

@@ -15,7 +15,7 @@ void example1() //adjacent_find()
     if(it==v2.end())
         cout<<"\nNo such pair found";
 }
-void example2() //all_of()` // all the range ar in satisfying condition or not
+void example2() //all_of() // all the range ar in satisfying condition or not
 {
     vector<int> v1={10,20,14,50,18,70,12};
     if(all_of(v1.begin(),v1.end(),[](int a)->bool {return a%2==0;}))

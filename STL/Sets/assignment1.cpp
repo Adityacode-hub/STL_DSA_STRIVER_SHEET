@@ -28,7 +28,7 @@ class Score
         cout << "Runs: " << runs << ", Wickets: " << wickets << endl;
     }
 };
-struct comparebyruns//functors
+struct comparebyruns//comparator as functor
 {
     bool operator()(const Score* s1,const Score* s2)
  const{

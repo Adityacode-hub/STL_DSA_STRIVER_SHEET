@@ -47,7 +47,7 @@ void f2()
     cout<<endl;
 
 //-----------------unordered set -------------------------//
-
+//can be iterated forward only
 unordered_set<int>s5={20,40,50,60};
 for (auto x:s5)
 {
