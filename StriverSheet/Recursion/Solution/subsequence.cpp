@@ -15,9 +15,9 @@ public:
         ans.push_back(temp);//we are pushing evrything that is inside the temp to ans
         return;
       }
-      temp.push_back(arr[index]);
+      temp.push_back(arr[index]);//taking it
       subsequence(arr,index+1,temp,ans);
-      temp.pop_back();
+      temp.pop_back();//leaving it
       subsequence(arr,index+1,temp,ans);
     }
 };
