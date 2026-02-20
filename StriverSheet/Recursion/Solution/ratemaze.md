@@ -75,3 +75,39 @@ vector<vector<bool>> vis(
 );
 
 or simple we can reassign the value to the matrix on the matrix we are working at
+
+the thing is  simple we have found the base case
+
+1. mat[r][c]==0
+     return
+2. if(r<0&&c<0||r>n&&c>n||mat[r][c]==0)
+      return
+3. if(r==n-1 && c==n-1)
+    return
+
+now to track the 
+mat[r][c]=-1 //initially
+
+void helper(vector<vector<int>>&mat,int r,int c,vector<string>&ans,string temp)
+{ int n=mat.size();
+    if(r<0&&c<0||r>n&&c>n||mat[r][c]==0)
+      return;
+    if(r==n-1 && c==n-1)
+    ans.push_back(temp);
+    return;
+    mat[r][c]=-1;
+     helper(mat,r-1,c,ans,temp+"U");//up
+    helper(mat,r+1,c,ans,temp+"D");//Down
+    helper(mat,r,c-1,ans,temp+"L");//left
+    helper(mat,r,c+1,ans,temp+"R");//right
+    mat[r][c]=1;
+
+}
+
+vector<string>findpath(vector<vector<int>>&mat)
+{
+    int n=mat.size();
+    vector<string>ans;
+    vector<vector<bool>>vis(n,vector<bool>(n,true));
+    helper(mat,0,0,path,ans,visited);
+}
