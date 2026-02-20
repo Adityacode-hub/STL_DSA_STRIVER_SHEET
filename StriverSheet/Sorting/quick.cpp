@@ -24,10 +24,10 @@ void quicksort(vector<int>& arr, int start, int end)
     if(start >= end)
         return;
 
-    int p = partition(arr, start, end);
+    int p = partition(arr, start, end);//partion in two halves 
 
-    quicksort(arr, start, p-1);
-    quicksort(arr, p+1, end);
+    quicksort(arr, start, p-1);//one half smaller than pivot
+    quicksort(arr, p+1, end);//one half greater than the pivot
 }
 
 int main()
