@@ -8,7 +8,6 @@ public:
 
     int n;
     vector<vector<int>> board;
-
     // ---------- VALID ----------
     bool valid(int row,int col)
     {
@@ -23,10 +22,10 @@ public:
     // ---------- SOLVER ----------
     bool solve(int row,int col,int moveCount)
     {
-        //movecount is used to track the move on which we are working 
+        //move count is used to track the move on which we are working 
         if(moveCount == n*n)
             return true;
-
+            
         // 1
         if(valid(row+2,col+1))
         {
@@ -107,8 +106,8 @@ public:
         // 8
         if(valid(row-1,col-2))//true
         {
-            board[row-1][col-2]=moveCount;//placecount there
-
+            board[row-1][col-2]=moveCount; //placecount there
+             
             if(solve(row-1,col-2,moveCount+1))//mount count means next move number=2
                 return true;
 

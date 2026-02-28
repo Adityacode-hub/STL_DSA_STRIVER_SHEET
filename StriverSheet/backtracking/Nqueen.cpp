@@ -70,7 +70,7 @@ public:
         }
     }
 
-    // ---------------- DRIVER ----------------
+    // ---------------- DRIVER ----------------------
     vector<vector<string>> solveNQueen(int N)
     {
         n=N;
