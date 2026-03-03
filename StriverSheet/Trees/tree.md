@@ -79,3 +79,14 @@ inorder(node->left);
 cout<<node->data;
 inorder(node->right);
 }
+
+----------------------------------------------------
+think of  node(left,data,right) aur root ka type h node so ismei teen component h do not think about component think about root only
+---------------------------------------------------
+          dada ji (root node)/root means single alwys
+  left    /         \ right
+        papa       chaha
+        /  \         /
+      /     \        beti
+    /        \
+    aditya   anuj
