@@ -79,7 +79,7 @@ Node* Node::insert(Node* root, int val) {
 
     return root;
 }
-//height of the binary tree baiscally post order traversal
+//height of the binary tree basically post order traversal
 int Node::height(Node* root)
 {
     if(root==nullptr)

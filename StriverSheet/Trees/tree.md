@@ -90,3 +90,18 @@ think of  node(left,data,right) aur root ka type h node so ismei teen component 
       /     \        beti
     /        \
     aditya   anuj
+
+
+    why we have taken the queue because the thing is in the queue we need to maintain the order
+
+    queue:- order maintain rahta h
+    both side se insert ya nikal skte h 
+    first in first out principle pe kaam krta h yeh
+pushed from the back alaways tabhi peeche se push karenge and aage se nikal lenge this is the simple working of the queue.
+
+queue
+-----------------------------------
+   <- yaha se pop                  1, 2,3  ->yaha se push
+-----------------------------------
+    stack:-first in last out pe kaam krta h yeh
+    ismei order reverse ho jata h
