@@ -20,6 +20,7 @@ public:
     int count(Node*root);
     int sumNode(Node*root);
     bool isidentical(Node*root1,Node*root2);
+    int diametre(Node* root);
 };
 
 // constructor
@@ -90,6 +91,22 @@ int Node::height(Node* root)
     int rightht=height(root->right);//right
     return max(leftht,rightht)+1;//root
 }
+//diameter of the tree
+int Node::diametre(Node* root)
+{
+    if(root == nullptr)
+        return 0;
+
+    int leftHeight = height(root->left);
+    int rightHeight = height(root->right);
+
+    int op1 = leftHeight + rightHeight;
+
+    int op2 = diametre(root->left);
+    int op3 = diametre(root->right);
+
+    return max(op1, max(op2, op3));
+}
 //counting the nodes this is also the postorder traversal
 int Node::count(Node*root)
 {
@@ -149,6 +166,7 @@ int main() {
     cout << "Inorder Traversal: ";
     helper.inorder(root);
     cout<<endl;
+     cout<<"diameter of the tree 1 :-"<<helper.diametre(root);
     cout<<"height of the tree :- "<<helper.height(root);
     cout<<endl;
     cout<<"count of Node:- "<<helper.count(root);
@@ -156,7 +174,8 @@ int main() {
     cout<<"sum of the node:-"<<helper.sumNode(root);
     cout<<endl;
     cout<<"the node are identical:-"<<helper.isidentical(root,root1);
-cout<<endl;
+   
+
 
  
 delete root;

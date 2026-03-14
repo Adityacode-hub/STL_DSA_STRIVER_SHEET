@@ -19,7 +19,8 @@ public:
 vector<int> zigzagTraversal(Node* root) {
 
     vector<int> result;
-    if(root == nullptr) return result;
+    if(root == nullptr) 
+      return result;
 
     queue<Node*> q;
     q.push(root);
