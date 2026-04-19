@@ -38,6 +38,6 @@ int main()
     root->left->left=new TreeNode(4);
     root->right->right=new TreeNode(5);
     Solution s;
-    s.diameterOfBinaryTree(1);
+    s.diameterOfBinaryTree(root);
     cout<<"the diameter of the tree node is:- " << endl;
 }
