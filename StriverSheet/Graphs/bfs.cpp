@@ -9,10 +9,11 @@ vector<int> bfs(vector<vector<int>>& adj)
     int n = adj.size();
     vector<int> res;
     vector<bool> visited(n, false);
+    //this is used to  place the node in order and take it out as same as it is possible 
     queue<int> q;
     q.push(0);
     visited[0] = true;
-
+//iterating until it is not end 
     while(!q.empty())
     {
         int node = q.front();
