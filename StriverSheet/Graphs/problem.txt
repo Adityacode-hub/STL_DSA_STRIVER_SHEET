@@ -1,0 +1,9 @@
+LeetCode 752 — Open the Lock
+LeetCode 433 — Minimum Genetic Mutation
+LeetCode 127 — Word Ladder (again, after 2 days)
+these are some of the question like  word Ladder
+
+BFS → Queue
+Dijkstra → Priority Queue
+Kruskal → DSU + Sorting
+Prim → Priority Queue

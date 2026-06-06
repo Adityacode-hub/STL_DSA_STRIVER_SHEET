@@ -35,7 +35,7 @@ public:
             {
                 if(grid[i][j] == '1') // land
                 {
-                    dfs(grid, i, j);
+                    dfs(grid, i, j);//check for the island in different directions
                     islands++;
                 }
             }
@@ -59,3 +59,14 @@ int main()
 
     return 0;
 }
+
+
+     // 0   1   2  <- columns
+
+//0     1   1   0
+//1     1   0   1
+//2     0   0   1
+
+↑
+//rows  m = grid.size(); 3
+//column n[0].size()= 1 1 0 i.e 3
