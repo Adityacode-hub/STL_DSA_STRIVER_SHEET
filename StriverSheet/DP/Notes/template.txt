@@ -1,0 +1,74 @@
+//first you have take the answer of the fist and then store it to find the another rather than doing the repetative task
+--------
+example
+--------
+print the value of 2*n for a given n
+
+1> base case ->2*1=2
+
+2>choote answer se apna answer kaise banana ha
+
+--- here dp will not be used bcz we are solving for  the different 
+int fun(int n)
+{
+    if(n==1)
+    {
+        return 2;
+    }
+    int ans=fun(n-1);//iska value 8 de dega i.e 
+    return ans+2;
+}
+
+//this is used to solve the overlapping problems
+fun(n=4)
+  |
+  v
+fun(n=3)
+  |
+  v
+fun(n=2)
+  |
+  v
+fun(n=1)
+|
+|____ return 2
+//here we are finding for the different answer for different parts
+
+## where to use the dynamic programming where u are solving the same thing continuously 
+-----------------------------------------
+print the fibancci value of n 
+fib(0)
+fib(1)=1
+fib(n)=fib(n-1)+fib(n-2)
+                  |
+                  |--- choote answer
+
+//function mei jo input change  ho raha h usko ek diary mei likh lo i.e  
+unordered_map<int,int>dp;
+int fib(int n)
+{
+    if(n==0 || n==1)
+    {
+        return n;//do not touch the base case
+    }
+     if(dp.find(n)!=dp.end())//basic heapmap technique to find the element
+     {
+        return dp[n];//it will give the number bcz in hashmap index gives number
+     }
+     int a1=fib(n-1);
+     int a2=fib(n-2);
+     int ans=a1+a2;
+        dp[n]=ans;//just write it in dp named hashmap i.e baisc remembering technique
+     return ans;
+}
+
+-----------------
+roadmap would be 
+-----------------
+1-D based dp
+2-D based dp
+string based dp
+grid based dp
+game startegy
+
+
