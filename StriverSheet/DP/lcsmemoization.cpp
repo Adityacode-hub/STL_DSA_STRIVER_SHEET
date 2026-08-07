@@ -11,9 +11,13 @@ int solve(int i, int j, string &s1, string &s2, vector<vector<int>> &dp)
         return dp[i][j];
 
     if(s1[i] == s2[j])
+    //agar match ho gaya then move forward mtlb next elemnt ko check karo whether it is required or not
         return dp[i][j] = 1 + solve(i+1, j+1, s1, s2, dp);
 
     return dp[i][j] = max(
+        //jab mismatch go gaya then pahle dekhta hun i  ko bdha kr 
+        //then j ko bdha kr mtlb dono possibility check kar raha hun
+        //ho skta h ek extra aa gaya hoga so we have checked with both possibilities
         solve(i+1, j, s1, s2, dp),
         solve(i, j+1, s1, s2, dp)
     );
