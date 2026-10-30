@@ -28,9 +28,9 @@ void complex::showdata()
     cout<< a<<"+" <<  b<<"i"<<endl ;
 }
 complex complex::operator+(complex c)
-{
+{//jsi object nei call kiya wo c1 and jo argument pass hua wo c2
     complex temp;
-    temp.a=a+c.a;
+    temp.a=a+c.a;//parameter ka object i.e second element 
     temp.b=b+c.b;
     return temp;
 

@@ -1,6 +1,4 @@
-#include<iostream>
-#include<string>
-using namespace std;
+
 #include<iostream>
 #include<string>
 using namespace std;
@@ -21,16 +19,6 @@ void consecutivestring(string s,int curr)
 
     // Add 'b' (always allowed)
     consecutivestring(s+"b",curr);
-}
-
-int main()
-{
-    int n = 3;
-    string k = "";
-
-    consecutivestring(k,n);
-
-    return 0;
 }
 
 int main()

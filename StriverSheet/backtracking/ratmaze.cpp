@@ -53,7 +53,8 @@ temp.pop_back();
     {
         int n = maze.size();
 
-        if(maze[0][0] == 0) return {};
+        if(maze[0][0] == 0) 
+        return {};
 
         string temp = "";
 

@@ -4,19 +4,21 @@ using namespace std;
 class Solution {
 public:
 
+// same row ,same column,same 3*3 box
+
     // 🔹 Check if placing num at (row,col) is safe
     bool isSafe(vector<vector<char>>& board, int row, int col, char num)
     {
         // Row check
         for(int j = 0; j < 9; j++)
-        {
+        {//board[4][0],board[4][1],board[4][2],board[4][3]
             if(board[row][j] == num)
                 return false;
         }
 
         // Column check
         for(int i = 0; i < 9; i++)
-        {
+        {//board[0][6],board[1][6],board[2][6]
             if(board[i][col] == num)
                 return false;
         }
