@@ -9,6 +9,7 @@ public:
         int j=1;
         while(j<n)
         {
+            
             vector<int>current_interval=intervals[i];
             vector<int>next_interval=intervals[j];
             int cs=current_interval[0];
